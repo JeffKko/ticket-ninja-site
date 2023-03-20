@@ -5,9 +5,13 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import DescriptionIcon from '@mui/icons-material/Description';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
+import TextsmsIcon from '@mui/icons-material/Textsms';
 import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
+import FooterBar from '../src/FooterBar';
+// import ninjaImage from '../public/ninja.png'
 
 export default function Home() {
   return (
@@ -21,6 +25,7 @@ export default function Home() {
           alignItems: 'center',
         }}
       >
+        <img width="128" src="./ninja.png" alt="logo" />
         <Typography variant="h4" component="h1" gutterBottom>
           Material UI - Next.js example in TypeScript
         </Typography>
@@ -34,23 +39,7 @@ export default function Home() {
           遠離黃牛, 輕鬆搶票
         </Typography>
 
-        <Box
-          sx={{
-            my: 4,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}
-        >
-          <Button variant="text" component={Link} href="/guide" color="secondary" startIcon={<DescriptionIcon />}>
-            使用說明
-          </Button>
-          ．
-          <Button variant="text" component={Link} href="/question" color="secondary" startIcon={<QuestionAnswerIcon />}>
-            常見問題
-          </Button>
-        </Box>
-
+        <FooterBar />
         {/* <Link href="/about" color="secondary">
           Go to the about page
         </Link> */}

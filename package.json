@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
@@ -23,8 +23,14 @@
   "devDependencies": {
     "@types/node": "latest",
     "@types/react": "latest",
+    "@types/styled-components": "^5.1.26",
+    "axios": "^1.3.4",
+    "cheerio": "^1.0.0-rc.12",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "htmlparser2": "^8.0.1",
+    "react-markdown": "^8.0.5",
+    "styled-components": "^5.3.9",
     "typescript": "latest"
   }
 }

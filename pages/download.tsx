@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
+import FooterBar from '../src/FooterBar';
 
 export default function About() {
   return (
@@ -19,14 +20,8 @@ export default function About() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" component="h1" gutterBottom>
-          Material UI - Next.js example in TypeScript
-        </Typography>
-        <Box maxWidth="sm">
-          <Button variant="contained" component={Link} noLinkStyle href="/">
-            Go to the home page
-          </Button>
-        </Box>
+        to be continue...
+        <FooterBar />
         <ProTip />
         <Copyright />
       </Box>
