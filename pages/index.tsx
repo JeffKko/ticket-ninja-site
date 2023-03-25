@@ -11,7 +11,7 @@ import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
 import FooterBar from '../src/FooterBar';
-// import ninjaImage from '../public/ninja.png'
+
 
 export default function Home() {
   return (
@@ -26,23 +26,18 @@ export default function Home() {
         }}
       >
         <img width="128" src="./ninja.png" alt="logo" />
-        <Typography variant="h4" component="h1" gutterBottom>
-          Material UI - Next.js example in TypeScript
+        <Typography className="app-title" variant="h1">
+          TICKET.Ninja
         </Typography>
-        <h1>Material UI - Next.js example in TypeScript</h1>
-        <h4>Material UI - Next.js example in TypeScript</h4>
         <Typography variant="subtitle1" align="center" gutterBottom>
           TICKET.Ninja 是一個購票輔助程式 <br />
           專門為拓元售票系統
-          (<Link href="https://tixcraft.com" underline="hover">{'https://tixcraft.com'}</Link>) 打造 <br />
+          (<Link href="https://tixcraft.com" target="_blank" underline="hover">{'https://tixcraft.com'}</Link>) 打造 <br />
           幫助您擊敗搶票機器人和搶票外掛 <br />
-          遠離黃牛, 輕鬆搶票
+          遠離黃牛 / 輕鬆搶票
         </Typography>
 
         <FooterBar />
-        {/* <Link href="/about" color="secondary">
-          Go to the about page
-        </Link> */}
         <ProTip />
         <Copyright />
       </Box>

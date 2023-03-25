@@ -33,6 +33,33 @@ export default function MyApp(props: MyAppProps) {
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
+        <style>
+          {
+            `:root {
+              --color-light-blue: #1dddf8;
+              --color-light-red: #f45054;
+              --color-light-yellow: #eaf10e;
+            }
+
+            .app-title {
+              padding-bottom: 48px;
+              background-image:
+                linear-gradient(
+                  90deg,
+                  var(--color-light-blue),
+                  var(--color-light-yellow),
+                  var(--color-light-red)
+                );
+              background-clip: text;
+              -webkit-background-clip: text;
+              color: transparent;
+              -webkit-text-fill-color: transparent;
+              font-size: 48px;
+              font-weight: bold;
+            }
+            `
+          }
+        </style>
         <Component {...pageProps} />
       </ThemeProvider>
     </CacheProvider>

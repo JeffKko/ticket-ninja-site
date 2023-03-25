@@ -30,7 +30,10 @@ const theme = createTheme({
     fontFamily: roboto.style.fontFamily,
     subtitle1: {
       fontWeight: 600,
-    }
+    },
+    body1: {
+      fontWeight: 500,
+    },
   },
 });
 

@@ -21,7 +21,7 @@ export default function About() {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          Material UI - Next.js example in TypeScript
+          TICKET.Ninja - Q&A
         </Typography>
         <p>question</p>
         <Box maxWidth="sm">
