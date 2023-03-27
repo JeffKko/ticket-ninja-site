@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { FAQPageJsonLd } from 'next-seo';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -21,9 +22,9 @@ export default function About() {
         }}
       >
         <Typography variant="h4" component="h1" gutterBottom>
-          TICKET.Ninja - Q&A
+          TICKET.Ninja - FAQ
         </Typography>
-        <p>question</p>
+        <p>FAQ</p>
         <Box maxWidth="sm">
           <Button variant="contained" component={Link} noLinkStyle href="/">
             Go to the home page
@@ -33,6 +34,18 @@ export default function About() {
         <ProTip />
         <Copyright />
       </Box>
+      {/* <FAQPageJsonLd
+        mainEntity={[
+          {
+            questionName: 'How long is the delivery time?',
+            acceptedAnswerText: '3-5 business days.',
+          },
+          {
+            questionName: 'Where can I find information about product recalls?',
+            acceptedAnswerText: 'Read more on under information.',
+          },
+        ]}
+      /> */}
     </Container>
   );
 }

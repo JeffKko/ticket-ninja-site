@@ -17,6 +17,7 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "next": "latest",
+    "next-seo": "^5.15.0",
     "react": "latest",
     "react-dom": "latest"
   },

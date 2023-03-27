@@ -1,0 +1,13 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  // "typescript.tsdk": "node_modules/typescript/lib",
+  // "files.associations": {
+  //   "tslint.json": "json",
+  //   "**/packages/web/archive/**": "plaintext"
+  // },
+  // "javascript.suggest.autoImports": false,
+  // "typescript.suggest.autoImports": false,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    // prettier
+    "esbenp.prettier-vscode",
+    // styled-components
+    "jpoissonnier.vscode-styled-components"
+  ]
+}

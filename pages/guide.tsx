@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { GetStaticProps } from 'next';
-import axios from 'axios'
+import axios from 'axios';
 // import * as htmlparser2 from "htmlparser2";
-import styled from 'styled-components'
-import cheerio from "cheerio";
+import styled from 'styled-components';
+import cheerio from 'cheerio';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -12,7 +12,7 @@ import MuiLink from '@mui/material/Link';
 import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'react-markdown';
 import FooterBar from '../src/FooterBar';
 
 interface Props {
@@ -20,19 +20,22 @@ interface Props {
 }
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-
   // const res = await axios.get('https://hackmd.io/s/how-to-create-book')
 
-  const res = await axios.get('https://hackmd.io/@jzAV4dxpRviFxKd2XnW_9g/S1a1s6Veh')
+  const res = await axios.get(
+    'https://hackmd.io/@jzAV4dxpRviFxKd2XnW_9g/S1a1s6Veh',
+  );
 
-  const $ = cheerio.load(res.data)
+  const $ = cheerio.load(res.data);
   const doc = $('#doc').html();
 
   // console.log(doc)
 
-  if (!doc) throw new Error('not found doc')
+  if (!doc) throw new Error('not found doc');
 
-  const escapedHTML = doc.replace(/&lt;br \/&gt;/g,'<br />').replace(/&gt;/g,'>')
+  const escapedHTML = doc
+    .replace(/&lt;br \/&gt;/g, '<br />')
+    .replace(/&gt;/g, '>');
 
   return {
     props: {
@@ -64,11 +67,19 @@ const About: React.FC<Props> = ({ article }) => {
         </Typography> */}
         {/* <div dangerouslySetInnerHTML={{ __html: article }} /> */}
         <MarkdownWrap>
-          <ReactMarkdown children={article} linkTarget="_blank" components={{
-            p: ({node, ...props}) => <Typography variant="body1" component="p" {...props} />,
-            // a: ({node, ...props}) => <Button variant="text" component="a" color="secondary" {...props} />
-            a: ({node, ...props}) => <MuiLink underline="none" color="secondary" {...props} />
-          }} />
+          <ReactMarkdown
+            children={article}
+            linkTarget="_blank"
+            components={{
+              p: ({ node, ...props }) => (
+                <Typography variant="body1" component="p" {...props} />
+              ),
+              // a: ({node, ...props}) => <Button variant="text" component="a" color="secondary" {...props} />
+              a: ({ node, ...props }) => (
+                <MuiLink underline="none" color="secondary" {...props} />
+              ),
+            }}
+          />
 
           {/* components={{
     // Map `h1` (`# heading`) to use `h2`s.
@@ -88,7 +99,7 @@ const About: React.FC<Props> = ({ article }) => {
       </Box>
     </Container>
   );
-}
+};
 
 const MarkdownWrap = styled.div`
   max-width: 760px;
@@ -101,6 +112,7 @@ const MarkdownWrap = styled.div`
   word-break: break-word;
 
   p {
+    margin-top: 16px;
     margin-bottom: 16px;
   }
 
@@ -116,17 +128,19 @@ const MarkdownWrap = styled.div`
     padding-bottom: 0.2em;
     margin: 0 2px;
     font-size: 90%;
-    background-color: rgba(0,0,0,0.15);;
+    background-color: rgba(0, 0, 0, 0.15);
     border-radius: 3px;
+    color: #00acc1;
   }
 
   blockquote {
     font-size: 16px;
     padding: 0 1em;
-    color: #777;
+    /* color: #777; */
+    color: #607d8b;
     border-left: 0.25em solid #ddd;
     margin-left: 4px;
   }
-`
+`;
 
 export default About;
