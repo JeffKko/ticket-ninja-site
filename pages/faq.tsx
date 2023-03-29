@@ -25,12 +25,12 @@ export default function About() {
           TICKET.Ninja - FAQ
         </Typography>
         <p>FAQ</p>
+        <FooterBar />
         <Box maxWidth="sm">
           <Button variant="contained" component={Link} noLinkStyle href="/">
             Go to the home page
           </Button>
         </Box>
-        <FooterBar />
         <ProTip />
         <Copyright />
       </Box>

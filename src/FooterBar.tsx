@@ -17,19 +17,43 @@ export default function ProTip() {
         flexWrap: 'wrap',
       }}
     >
-      <Button variant="text" component={Link} href="/guide" color="secondary" startIcon={<DescriptionIcon />}>
+      <Button
+        variant="text"
+        component={Link}
+        href="/guide"
+        color="secondary"
+        startIcon={<DescriptionIcon />}
+      >
         使用說明
       </Button>
       ．
-      <Button variant="text" component={Link} href="/question" color="secondary" startIcon={<QuestionAnswerIcon />}>
+      <Button
+        variant="text"
+        component={Link}
+        href="/faq"
+        color="secondary"
+        startIcon={<QuestionAnswerIcon />}
+      >
         常見問題
       </Button>
       ．
-      <Button variant="text" component={Link} href="/download" color="secondary" startIcon={<DownloadForOfflineIcon />}>
+      <Button
+        variant="text"
+        component={Link}
+        href="/download"
+        color="secondary"
+        startIcon={<DownloadForOfflineIcon />}
+      >
         檔案下載
       </Button>
       ．
-      <Button variant="text" component={Link} href="/about" color="secondary" startIcon={<TextsmsIcon />}>
+      <Button
+        variant="text"
+        component={Link}
+        href="/about"
+        color="secondary"
+        startIcon={<TextsmsIcon />}
+      >
         聯絡作者
       </Button>
     </Box>

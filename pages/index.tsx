@@ -24,22 +24,22 @@ export default function Home() {
           {
             position: 1,
             name: '使用說明',
-            item: 'https://ticketninja.club/guide',
+            item: 'https://ticketninja.club/guide/',
           },
           {
             position: 1,
             name: '常見問題',
-            item: 'https://ticketninja.club/faq',
+            item: 'https://ticketninja.club/faq/',
           },
           {
             position: 1,
             name: '檔案下載',
-            item: 'https://ticketninja.club/download',
+            item: 'https://ticketninja.club/download/',
           },
           {
             position: 1,
             name: '關於作者',
-            item: 'https://ticketninja.club/about',
+            item: 'https://ticketninja.club/about/',
           },
         ]}
       />

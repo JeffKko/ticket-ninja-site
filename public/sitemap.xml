@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://ticketninja.club/</loc>
+  <lastmod>2023-03-27T17:11:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://ticketninja.club/guide/</loc>
+  <lastmod>2023-03-27T17:11:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ticketninja.club/faq/</loc>
+  <lastmod>2023-03-25T17:16:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ticketninja.club/download/</loc>
+  <lastmod>2023-03-27T17:11:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ticketninja.club/about/</loc>
+  <lastmod>2023-03-27T17:11:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset>

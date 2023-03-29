@@ -66,6 +66,7 @@ const About: React.FC<Props> = ({ article }) => {
           Material UI - Next.js example in TypeScript
         </Typography> */}
         {/* <div dangerouslySetInnerHTML={{ __html: article }} /> */}
+        <FooterBar />
         <MarkdownWrap>
           <ReactMarkdown
             children={article}
@@ -93,7 +94,6 @@ const About: React.FC<Props> = ({ article }) => {
             Go to the home page
           </Button>
         </Box>
-        <FooterBar />
         <ProTip />
         <Copyright />
       </Box>
@@ -110,6 +110,14 @@ const MarkdownWrap = styled.div`
   margin-right: auto;
   margin-left: auto;
   word-break: break-word;
+
+  h1 {
+    margin-bottom: 44px;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+  }
 
   p {
     margin-top: 16px;
