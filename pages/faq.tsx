@@ -21,10 +21,10 @@ export default function About() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" component="h1" gutterBottom>
-          TICKET.Ninja - FAQ
+        <Typography variant="h4" component="h1" marginBottom={8}>
+          TICKET.Ninja - 常見問題
         </Typography>
-        <p>FAQ</p>
+        <p>FAQs</p>
         <FooterBar />
         <Box maxWidth="sm">
           <Button variant="contained" component={Link} noLinkStyle href="/">
