@@ -32,8 +32,8 @@ export default function MyApp(props: MyAppProps) {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <DefaultSeo
-        title="TICKET.Ninja 神速搶票機器人"
-        description="TICKET.Ninja 一款速度極快, 具有重刷票功能的的購票/搶票輔助程式, 幫助您搶贏其他拓元售票系統的機器人, 遠離黃牛, 輕鬆購票"
+        title="TICKET.Ninja - 最強拓元AI搶票機器人"
+        description="成為 TICKET.Ninja，輕鬆搶到心儀的演唱會門票！ 一款速度極快，具有AI輔助、自動化的購票輔助程式，幫助您搶贏其他拓元售票的搶票機器人，遠離黃牛、輕鬆購票"
       />
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
