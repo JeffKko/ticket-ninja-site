@@ -116,7 +116,7 @@ const MarkdownWrap = styled.div`
   }
 
   h2 {
-    margin-bottom: 32px;
+    margin: 32px 0;
   }
 
   p {
@@ -144,7 +144,6 @@ const MarkdownWrap = styled.div`
   blockquote {
     font-size: 16px;
     padding: 0 1em;
-    /* color: #777; */
     color: #607d8b;
     border-left: 0.25em solid #ddd;
     margin-left: 4px;

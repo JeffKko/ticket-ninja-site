@@ -20,11 +20,13 @@ export default function About() {
           alignItems: 'center',
         }}
       >
-        Github discussion <br />
+        <Typography variant="h4" component="h1" marginBottom={8}>
+          TICKET.Ninja - 聯絡作者
+        </Typography>
         <Link
           href="https://discord.com/channels/827534182183075870/1087403590244642836"
           target="_blank"
-          color="secondary"
+          color="primary"
         >
           Discord
         </Link>
