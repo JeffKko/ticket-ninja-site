@@ -59,13 +59,13 @@ export default function Home() {
           </Typography>
           <Typography variant="subtitle1" align="center" gutterBottom>
             成為 TICKET.Ninja，輕鬆搶到您所需的門票！ <br />
-            一款速度極快，具有AI輔助、自動化的購票輔助程式 <br />
+            一款免費 、速度極快，具有AI輔助、自動化的購票輔助程式 <br />
             專門為拓元售票系統 (
             <Link href="https://tixcraft.com" target="_blank" underline="hover">
               {'https://tixcraft.com'}
             </Link>
             ) 打造 <br />
-            幫助您擊敗搶票機器人和搶票搶票 <br />
+            幫助您擊敗其他的搶票機器人和搶票程式 <br />
             遠離黃牛 / 輕鬆購票
           </Typography>
 

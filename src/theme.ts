@@ -3,7 +3,7 @@ import { createTheme } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 
 export const roboto = Roboto({
-  weight: ['300', '400', '500', '700'],
+  weight: ['300', '400', '500', '700', '900'],
   subsets: ['latin'],
   display: 'swap',
   fallback: ['Helvetica', 'Arial', 'sans-serif'],
@@ -33,6 +33,21 @@ const theme = createTheme({
     },
     body1: {
       fontWeight: 500,
+    },
+    h1: {
+      fontWeight: 900,
+    },
+    h2: {
+      fontWeight: 900,
+    },
+    h3: {
+      fontWeight: 700,
+    },
+    h4: {
+      fontWeight: 700,
+    },
+    h5: {
+      fontWeight: 700,
     },
   },
 });
