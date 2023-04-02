@@ -1,44 +1,32 @@
-# Material UI - Next.js example in TypeScript
+# TICKET.Ninja - 最強拓元AI搶票機器人
 
-## How to use
+![logo](https://i.imgur.com/8t7yK6R.jpg)
 
-Download the example [or clone the repo](https://github.com/mui/material-ui):
+<br />
 
-<!-- #default-branch-switch -->
+## 成為 **TICKET.Ninja**，輕鬆搶到您心儀的門票！
 
-```sh
-curl https://codeload.github.com/mui/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/material-next-ts
-cd material-next-ts
-```
+---
 
-Install it and run:
+<br />
 
-```sh
-npm install
-npm run dev
-```
+## TICKET.Ninja 是 >
 
-or:
+一款速度極快，具有AI輔助、自動化的購票輔助程式
 
-<!-- #default-branch-switch -->
+專門為拓元售票系統 (https://tixcraft.com) 打造
 
-[![Edit on StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/mui/material-ui/tree/master/examples/material-next-ts)
+幫助您擊敗搶票機器人和搶票搶票
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui/material-ui/tree/master/examples/material-next-ts)
+遠離黃牛 / 輕鬆購票
 
-## The idea behind the example
+## 如何使用 >
 
-The project uses [Next.js](https://github.com/vercel/next.js), which is a framework for server-rendered React apps.
-It includes `@mui/material` and its peer dependencies, including [Emotion](https://emotion.sh/docs/introduction), the default style engine in Material UI v5. If you prefer, you can [use styled-components instead](https://mui.com/material-ui/guides/interoperability/#styled-components).
+- [使用說明](https://ticketninja.club/guide/)
+- [常見問題](https://ticketninja.club/faq/)
 
-## The link component
+## 相關連結 > 
 
-The [example folder](https://github.com/mui/material-ui/tree/HEAD/examples/material-next-ts) provides an adapter for the use of [Next.js's Link component](https://nextjs.org/docs/api-reference/next/link) with MUI.
-More information [in the documentation](https://mui.com/material-ui/guides/routing/#next-js).
-
-## What's next?
-
-<!-- #default-branch-switch -->
-
-You now have a working example project.
-You can head back to the documentation, continuing browsing it from the [templates](https://mui.com/material-ui/getting-started/templates/) section.
+- [檔案下載](https://ticketninja.club/download/)
+- [聯絡作者](https://ticketninja.club/about/)
+- [Discord 討論區](https://discord.com/channels/827534182183075870/1089573736568586280)
