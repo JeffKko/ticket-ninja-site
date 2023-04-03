@@ -72,9 +72,9 @@ const About: React.FC<Props> = ({ article }) => {
             children={article}
             linkTarget="_blank"
             components={{
-              p: ({ node, ...props }) => (
-                <Typography variant="body1" component="p" {...props} />
-              ),
+              // p: ({ node, ...props }) => (
+              //   <Typography variant="body1" component="p" {...props} />
+              // ),
               // a: ({node, ...props}) => <Button variant="text" component="a" color="secondary" {...props} />
               a: ({ node, ...props }) => (
                 <MuiLink underline="none" color="secondary" {...props} />
@@ -119,9 +119,22 @@ const MarkdownWrap = styled.div`
     margin: 32px 0;
   }
 
+  h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 32px 0;
+  }
+
   p {
     margin-top: 16px;
     margin-bottom: 16px;
+    /* font-size: 14px; */
+    font-weight: 400;
+  }
+
+  li {
+    font-size: 16px;
+    font-weight: 400;
   }
 
   img {

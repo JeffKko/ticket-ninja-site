@@ -13,6 +13,10 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 // import Button from '@mui/material/Button';
 // import Typography from '@mui/material/Typography';
+import AppleIcon from '@mui/icons-material/Apple';
+import WindowIcon from '@mui/icons-material/Window';
+import NewReleasesIcon from '@mui/icons-material/NewReleases';
+import HistoryIcon from '@mui/icons-material/History';
 
 interface CardProps {
   platform: string;
@@ -37,9 +41,12 @@ export default function About() {
         <Typography variant="h4" component="h1" marginBottom={8}>
           TICKET.Ninja - 檔案下載
         </Typography>
-        <Typography variant="h5" component="h3" margin={8}>
-          0.1.0-beta.2 (2023-04-03) - 免費版本
-        </Typography>
+        <Box display="flex" alignItems="center">
+          <NewReleasesIcon />
+          <Typography variant="h5" component="h3" margin={8} marginLeft={2}>
+            0.1.0-beta.2 (2023-04-03) - 免費版本
+          </Typography>
+        </Box>
         <Box display="flex" flexWrap="wrap" justifyContent="center">
           <Card variant="outlined" sx={{ minWidth: 275 }}>
             {renderCardBody({
@@ -51,9 +58,13 @@ export default function About() {
             })}
           </Card>
         </Box>
-        <Typography variant="h5" component="h3" margin={8}>
-          0.1.0-beta.1 (2023-03-30) - 免費版本
-        </Typography>
+        <Box display="flex" alignItems="center">
+          <HistoryIcon />
+          <Typography variant="h5" component="h3" margin={8} marginLeft={2}>
+            0.1.0-beta.1 (2023-03-30) - 免費版本
+          </Typography>
+        </Box>
+
         <Box display="flex" flexWrap="wrap" justifyContent="center">
           <Card variant="outlined" sx={{ minWidth: 275 }}>
             {renderCardBody({
@@ -100,9 +111,24 @@ const renderCardBody = ({
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {date}
         </Typography>
-        <Typography variant="h5" component="div">
+        <Box display="flex" alignItems="center">
+          {platform === 'macOS' ? (
+            <AppleIcon sx={{ marginRight: '8px' }} />
+          ) : (
+            <WindowIcon sx={{ marginRight: '8px' }} />
+          )}
+          <Typography variant="h5" component="div">
+            {platform}
+          </Typography>
+        </Box>
+        {/* <Typography variant="h5" component="div">
+          <AppleIcon sx={{ margin: '0 16px 0 0', lineHeight: '1.334' }} />
           {platform}
-        </Typography>
+        </Typography> */}
+        {/* <Typography variant="h5" component="div">
+          <AppleIcon sx={{ margin: '0 16px 0 0', lineHeight: '1.334' }} />
+          {platform}
+        </Typography> */}
         <Typography sx={{ mb: 1.5 }} color="text.secondary">
           {version}
         </Typography>

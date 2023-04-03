@@ -18,7 +18,7 @@ export default function Home() {
     <>
       <NextSeo canonical="https://ticketninja.club/" />
       <WebPageJsonLd
-        description="成為 TICKET.Ninja，輕鬆搶到心儀的演唱會門票！ 一款速度極快，具有AI輔助、自動化的購票輔助程式，幫助您搶贏其他拓元售票的搶票機器人，遠離黃牛、輕鬆購票"
+        description="成為 TICKET.Ninja，輕鬆搶到心儀的演唱會門票！ 一款免費、速度極快，具有AI輔助、自動化的搶票輔助程式，幫助您搶贏其他拓元售票的搶票機器人，遠離黃牛、輕鬆訂票"
         id="https://ticketninja.club/"
         breadcrumb={[
           {
@@ -59,14 +59,14 @@ export default function Home() {
           </Typography>
           <Typography variant="subtitle1" align="center" gutterBottom>
             成為 TICKET.Ninja，輕鬆搶到您所需的門票！ <br />
-            一款免費 、速度極快，具有AI輔助、自動化的購票輔助程式 <br />
+            一款免費 、速度極快，具有AI輔助、自動化的搶票輔助程式 <br />
             專門為拓元售票系統 (
             <Link href="https://tixcraft.com" target="_blank" underline="hover">
               {'https://tixcraft.com'}
             </Link>
             ) 打造 <br />
             幫助您擊敗其他的搶票機器人和搶票程式 <br />
-            遠離黃牛 / 輕鬆購票
+            遠離黃牛 / 輕鬆訂票
           </Typography>
 
           <FooterBar />

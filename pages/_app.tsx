@@ -33,7 +33,7 @@ export default function MyApp(props: MyAppProps) {
       </Head>
       <DefaultSeo
         title="TICKET.Ninja - 最強拓元AI搶票機器人"
-        description="成為 TICKET.Ninja，輕鬆搶到心儀的演唱會門票！ 一款速度極快，具有AI輔助、自動化的購票輔助程式，幫助您搶贏其他拓元售票的搶票機器人，遠離黃牛、輕鬆購票"
+        description="成為 TICKET.Ninja，輕鬆搶到心儀的演唱會門票！ 一款免費、速度極快，具有AI輔助、自動化的搶票輔助程式，幫助您搶贏其他拓元售票的搶票機器人，遠離黃牛、輕鬆訂票"
       />
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}

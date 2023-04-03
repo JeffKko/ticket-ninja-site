@@ -20,21 +20,21 @@ export default function ProTip() {
       <Button
         variant="text"
         component={Link}
-        href="/guide"
-        color="secondary"
-        startIcon={<DescriptionIcon />}
-      >
-        使用說明
-      </Button>
-      ．
-      <Button
-        variant="text"
-        component={Link}
         href="/faq"
         color="secondary"
         startIcon={<QuestionAnswerIcon />}
       >
         常見問題
+      </Button>
+      ．
+      <Button
+        variant="text"
+        component={Link}
+        href="/guide"
+        color="secondary"
+        startIcon={<DescriptionIcon />}
+      >
+        使用說明
       </Button>
       ．
       <Button
