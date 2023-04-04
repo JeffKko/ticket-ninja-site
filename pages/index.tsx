@@ -46,7 +46,6 @@ export default function Home() {
       />
       <Container maxWidth="lg">
         <Box
-          px={2}
           sx={{
             my: 4,
             display: 'flex',
@@ -70,7 +69,7 @@ export default function Home() {
             </Typography>
             <Typography variant="subtitle1" align="center" gutterBottom>
               成為 TICKET.Ninja，輕鬆搶到您所需的門票！ <br />
-              一款免費 、速度極快，具有AI輔助、自動化的搶票輔助程式 <br />
+              一款免費 、秒速，具有AI輔助、自動化的搶票助手 <br />
               專門為拓元售票系統 (
               <Link
                 href="https://tixcraft.com"
