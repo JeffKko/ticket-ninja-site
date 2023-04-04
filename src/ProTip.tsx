@@ -13,10 +13,12 @@ function LightBulbIcon(props: SvgIconProps) {
 
 export default function ProTip() {
   return (
-    <Typography sx={{ mt: 6, mb: 3 }} color="text.secondary">
+    <Typography
+      sx={{ mt: 6, mb: 3, textAlign: 'center' }}
+      color="text.secondary"
+    >
       <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-      Pro tip: See more <Link href="https://hackmd.io/@jzAV4dxpRviFxKd2XnW_9g/S1a1s6Veh">Guide</Link> in
-      the documentation.
+      Pro tip: See more <Link href="/guide/">Guide</Link> in the documentation.
     </Typography>
   );
 }
