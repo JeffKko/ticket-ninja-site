@@ -46,6 +46,34 @@ export default function About() {
         <Box display="flex" alignItems="center" mt={8} mb={4}>
           <NewReleasesIcon />
           <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+            0.1.0-beta.4
+          </Typography>
+          <Typography variant="subtitle1">(2023-04-06)</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.0-beta.4',
+              date: '2023-04-06',
+              fileName: 'ticket-ninja-app-0.1.0-beta-4-mac.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.0-beta.4',
+            })}
+          </Card>
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'Windows',
+              version: '0.1.0-beta.4',
+              date: '2023-04-06',
+              fileName: 'ticket-ninja-app-0.1.0-beta-4-win.exe',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.0-beta.4',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={8} mb={4}>
+          <HistoryIcon />
+          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
             0.1.0-beta.3
           </Typography>
           <Typography variant="subtitle1">(2023-04-05)</Typography>

@@ -24,7 +24,7 @@ export default function About() {
           TICKET.Ninja - 聯絡作者
         </Typography>
         <Link
-          href="https://discord.com/channels/827534182183075870/1087403590244642836"
+          href="https://discord.gg/65VpSVppRs"
           target="_blank"
           color="primary"
         >
