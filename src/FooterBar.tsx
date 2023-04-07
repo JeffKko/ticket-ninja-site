@@ -20,7 +20,7 @@ export default function ProTip() {
       <Button
         variant="text"
         component={Link}
-        href="/faq"
+        href="/faq/"
         color="secondary"
         startIcon={<QuestionAnswerIcon />}
       >
@@ -30,7 +30,7 @@ export default function ProTip() {
       <Button
         variant="text"
         component={Link}
-        href="/guide"
+        href="/guide/"
         color="secondary"
         startIcon={<DescriptionIcon />}
       >
@@ -40,7 +40,7 @@ export default function ProTip() {
       <Button
         variant="text"
         component={Link}
-        href="/download"
+        href="/download/"
         color="secondary"
         startIcon={<DownloadForOfflineIcon />}
       >
@@ -50,7 +50,7 @@ export default function ProTip() {
       <Button
         variant="text"
         component={Link}
-        href="/about"
+        href="/about/"
         color="secondary"
         startIcon={<TextsmsIcon />}
       >

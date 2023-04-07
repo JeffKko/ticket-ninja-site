@@ -15,6 +15,8 @@ import Copyright from '../src/Copyright';
 import ReactMarkdown from 'react-markdown';
 import FooterBar from '../src/FooterBar';
 
+import { TopSticker } from '../src/TopSticker';
+
 interface Props {
   article: string;
 }
@@ -47,6 +49,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 const About: React.FC<Props> = ({ article }) => {
   return (
     <Container maxWidth="lg">
+      <TopSticker />
       <Box
         sx={{
           my: 4,

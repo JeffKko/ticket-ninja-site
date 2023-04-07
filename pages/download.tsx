@@ -18,6 +18,8 @@ import WindowIcon from '@mui/icons-material/Window';
 import NewReleasesIcon from '@mui/icons-material/NewReleases';
 import HistoryIcon from '@mui/icons-material/History';
 
+import { TopSticker } from '../src/TopSticker';
+
 interface CardProps {
   platform: string;
   version: string;
@@ -29,6 +31,7 @@ interface CardProps {
 export default function About() {
   return (
     <Container maxWidth="lg">
+      <TopSticker />
       <Box
         sx={{
           my: 4,
@@ -38,9 +41,25 @@ export default function About() {
           alignItems: 'center',
         }}
       >
-        <Typography variant="h4" component="h1" marginBottom={8}>
+        <Typography
+          variant="h4"
+          component="h1"
+          marginBottom={8}
+          sx={{
+            textAlign: 'center',
+            '@media only screen and (max-width: 768px)': {
+              textAlign: 'left',
+              paddingRight: '120px',
+              paddingLeft: '16px',
+            },
+          }}
+        >
           TICKET.Ninja - 檔案下載
         </Typography>
+
+        {/* <Typography variant="h4" component="h1" marginBottom={8}>
+          TICKET.Ninja - 檔案下載
+        </Typography> */}
         <FooterBar />
 
         <Box display="flex" alignItems="center" mt={8} mb={4}>

@@ -25,6 +25,8 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import ReactMarkdown from 'react-markdown';
 import MuiLink from '@mui/material/Link';
 
+import { TopSticker } from '../src/TopSticker';
+
 interface Props {
   article: string;
 }
@@ -59,6 +61,7 @@ const Faq: React.FC<Props> = ({ article }) => {
 
   return (
     <Container maxWidth="lg">
+      <TopSticker />
       <Box
         sx={{
           my: 4,

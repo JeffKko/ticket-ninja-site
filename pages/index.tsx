@@ -63,11 +63,16 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
-            <img width="128" src="./ninja.png" alt="logo" />
+            <img width="128" height="128" src="./ninja.webp" alt="logo" />
             <Typography className="app-title" variant="h1">
               TICKET.Ninja
             </Typography>
-            <Typography variant="subtitle1" align="center" gutterBottom>
+            <Typography
+              variant="subtitle1"
+              component="h2"
+              align="center"
+              gutterBottom
+            >
               成為 TICKET.Ninja，輕鬆搶到您所需的門票！ <br />
               一款免費 、秒速，具有AI輔助、自動化的搶票助手 <br />
               專門為拓元售票系統 (
@@ -127,6 +132,7 @@ export default function Home() {
                     }}
                   >
                     <iframe
+                      title="demo video"
                       src="https://streamable.com/e/sv5p1g?autoplay=1"
                       frameBorder="0"
                       width="100%"
