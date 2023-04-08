@@ -82,6 +82,7 @@ const About: React.FC<Props> = ({ article }) => {
               a: ({ node, ...props }) => (
                 <MuiLink underline="none" color="secondary" {...props} />
               ),
+              img: ({ node, ...props }) => <img loading="lazy" {...props} />,
             }}
           />
 

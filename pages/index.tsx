@@ -63,7 +63,7 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
-            <img width="128" height="128" src="./ninja.webp" alt="logo" />
+            <img width="128" height="128" src="./ninja_384.webp" alt="logo" />
             <Typography className="app-title" variant="h1">
               TICKET.Ninja
             </Typography>
