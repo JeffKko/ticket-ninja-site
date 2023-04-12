@@ -57,13 +57,55 @@ export default function About() {
           TICKET.Ninja - 檔案下載
         </Typography>
 
-        {/* <Typography variant="h4" component="h1" marginBottom={8}>
-          TICKET.Ninja - 檔案下載
-        </Typography> */}
         <FooterBar />
+
+        <MuiLink
+          href="https://github.com/JeffKko/ticket-ninja-site/releases"
+          target="_blank"
+        >
+          歷史更新紀錄
+        </MuiLink>
 
         <Box display="flex" alignItems="center" mt={8} mb={4}>
           <NewReleasesIcon />
+          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+            0.1.0-beta.7
+          </Typography>
+          <Typography variant="subtitle1">(2023-04-12)</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.0-beta.7',
+              date: '2023-04-12',
+              fileName: 'ticket-ninja-app-0.1.0-beta-7-mac.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.0-beta.7',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={8} mb={4}>
+          <HistoryIcon />
+          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+            0.1.0-beta.6
+          </Typography>
+          <Typography variant="subtitle1">(2023-04-12)</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.0-beta.6',
+              date: '2023-04-12',
+              fileName: 'ticket-ninja-app-0.1.0-beta-6-mac.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.0-beta.6',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={8} mb={4}>
+          <HistoryIcon />
           <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
             0.1.0-beta.5
           </Typography>
