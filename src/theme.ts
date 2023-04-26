@@ -33,6 +33,8 @@ const theme = createTheme({
     },
     body1: {
       fontWeight: 500,
+      marginTop: 16,
+      marginBottom: 16,
     },
     h1: {
       fontWeight: 900,
@@ -48,6 +50,12 @@ const theme = createTheme({
     },
     h5: {
       fontWeight: 700,
+      marginTop: 40,
+      marginBottom: 40,
+    },
+    h6: {
+      marginTop: 32,
+      marginBottom: 32,
     },
   },
 });

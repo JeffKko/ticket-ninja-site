@@ -22,5 +22,5 @@
 ## 🪧 相關連結 >
 
 - [檔案下載](https://ticketninja.club/download/)
-- [聯絡作者](https://ticketninja.club/about/)
+- [關於我們](https://ticketninja.club/about/)
 - [Discord 討論區](https://discord.com/channels/827534182183075870/1089573736568586280)

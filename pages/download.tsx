@@ -26,6 +26,7 @@ interface CardProps {
   date: string;
   fileName: string;
   link: string;
+  reportLink?: string;
 }
 
 export default function About() {
@@ -41,7 +42,7 @@ export default function About() {
           alignItems: 'center',
         }}
       >
-        <Typography
+        {/* <Typography
           variant="h4"
           component="h1"
           marginBottom={8}
@@ -55,7 +56,7 @@ export default function About() {
           }}
         >
           TICKET.Ninja - 檔案下載
-        </Typography>
+        </Typography> */}
 
         <FooterBar />
 
@@ -66,9 +67,68 @@ export default function About() {
           歷史更新紀錄
         </MuiLink>
 
-        <Box display="flex" alignItems="center" mt={8} mb={4}>
+        <Box display="flex" alignItems="center" mt={8}>
           <NewReleasesIcon />
-          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
+            0.1.2
+          </Typography>
+          <Typography variant="subtitle1">(2023-04-26)</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.2',
+              date: '2023-04-26',
+              fileName: 'ticket-ninja-app-0.1.2-mac.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.2',
+              reportLink:
+                'https://www.virustotal.com/gui/file/fc3dd7ee67cda72d49be0deb5a81fcac9d4649a744b799b86b60333cd00e6830/detection',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={8}>
+          <HistoryIcon />
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
+            0.1.1
+          </Typography>
+          <Typography variant="subtitle1">(2023-04-17)</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.1',
+              date: '2023-04-17',
+              fileName: 'ticket-ninja-app-0.1.1-mac.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.1',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={8}>
+          <HistoryIcon />
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
+            0.1.0-beta.8
+          </Typography>
+          <Typography variant="subtitle1">(2023-04-14)</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.0-beta.8',
+              date: '2023-04-14',
+              fileName: 'ticket-ninja-app-0.1.0-beta-8-mac.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.0-beta.8',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={6}>
+          <HistoryIcon />
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             0.1.0-beta.7
           </Typography>
           <Typography variant="subtitle1">(2023-04-12)</Typography>
@@ -85,9 +145,9 @@ export default function About() {
           </Card>
         </Box>
 
-        <Box display="flex" alignItems="center" mt={8} mb={4}>
+        <Box display="flex" alignItems="center" mt={8}>
           <HistoryIcon />
-          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             0.1.0-beta.6
           </Typography>
           <Typography variant="subtitle1">(2023-04-12)</Typography>
@@ -104,9 +164,9 @@ export default function About() {
           </Card>
         </Box>
 
-        <Box display="flex" alignItems="center" mt={8} mb={4}>
+        <Box display="flex" alignItems="center" mt={8}>
           <HistoryIcon />
-          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             0.1.0-beta.5
           </Typography>
           <Typography variant="subtitle1">(2023-04-08)</Typography>
@@ -132,9 +192,9 @@ export default function About() {
           </Card>
         </Box>
 
-        <Box display="flex" alignItems="center" mt={8} mb={4}>
+        <Box display="flex" alignItems="center" mt={8}>
           <HistoryIcon />
-          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             0.1.0-beta.4
           </Typography>
           <Typography variant="subtitle1">(2023-04-06)</Typography>
@@ -160,9 +220,9 @@ export default function About() {
           </Card>
         </Box>
 
-        <Box display="flex" alignItems="center" mt={8} mb={4}>
+        <Box display="flex" alignItems="center" mt={8}>
           <HistoryIcon />
-          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             0.1.0-beta.3
           </Typography>
           <Typography variant="subtitle1">(2023-04-05)</Typography>
@@ -188,9 +248,9 @@ export default function About() {
           </Card>
         </Box>
 
-        <Box display="flex" alignItems="center" mt={8} mb={4}>
+        <Box display="flex" alignItems="center" mt={8}>
           <HistoryIcon />
-          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             0.1.0-beta.2
           </Typography>
           <Typography variant="subtitle1">(2023-04-03)</Typography>
@@ -206,9 +266,9 @@ export default function About() {
             })}
           </Card>
         </Box>
-        <Box display="flex" alignItems="center" mt={8} mb={4}>
+        <Box display="flex" alignItems="center" mt={8}>
           <HistoryIcon />
-          <Typography variant="h5" component="h3" mr={1} marginLeft={2}>
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             0.1.0-beta.1
           </Typography>
           <Typography variant="subtitle1">(2023-03-30)</Typography>
@@ -256,6 +316,7 @@ const renderCardBody = ({
   date,
   fileName,
   link,
+  reportLink,
 }: CardProps) => {
   return (
     <>
@@ -269,19 +330,19 @@ const renderCardBody = ({
           ) : (
             <WindowIcon sx={{ marginRight: '8px' }} />
           )}
-          <Typography variant="h5" component="div">
+          <Typography variant="body2" component="div">
             {platform}
           </Typography>
         </Box>
-        {/* <Typography variant="h5" component="div">
+        {/* <Typography variant="h6" component="div">
           <AppleIcon sx={{ margin: '0 16px 0 0', lineHeight: '1.334' }} />
           {platform}
         </Typography> */}
-        {/* <Typography variant="h5" component="div">
+        {/* <Typography variant="h6" component="div">
           <AppleIcon sx={{ margin: '0 16px 0 0', lineHeight: '1.334' }} />
           {platform}
         </Typography> */}
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+        <Typography sx={{ mt: 1, mb: 1.5 }} color="text.secondary">
           {version}
         </Typography>
         <Typography variant="body2">{fileName}</Typography>
@@ -290,6 +351,16 @@ const renderCardBody = ({
         <Button size="small" component={MuiLink} href={link} target="_blank">
           檔案下載
         </Button>
+        {reportLink && (
+          <Button
+            size="small"
+            component={MuiLink}
+            href={reportLink}
+            target="_blank"
+          >
+            檔案安全性掃描報告
+          </Button>
+        )}
       </CardActions>
     </>
   );

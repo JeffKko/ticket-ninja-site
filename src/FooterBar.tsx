@@ -5,6 +5,7 @@ import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import DownloadForOfflineIcon from '@mui/icons-material/DownloadForOffline';
 import TextsmsIcon from '@mui/icons-material/Textsms';
 import Link from './Link';
+import InfoIcon from '@mui/icons-material/Info';
 
 export default function ProTip() {
   return (
@@ -52,9 +53,9 @@ export default function ProTip() {
         component={Link}
         href="/about/"
         color="secondary"
-        startIcon={<TextsmsIcon />}
+        startIcon={<InfoIcon />}
       >
-        聯絡作者
+        關於我們
       </Button>
     </Box>
   );

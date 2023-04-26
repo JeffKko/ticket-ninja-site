@@ -2,6 +2,9 @@ import * as React from 'react';
 import Link from '@mui/material/Link';
 import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
 import Typography from '@mui/material/Typography';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import Button from '@mui/material/Button';
+import { DiscordIcon } from './Icons';
 
 function LightBulbIcon(props: SvgIconProps) {
   return (
@@ -17,8 +20,30 @@ export default function ProTip() {
       sx={{ mt: 6, mb: 3, textAlign: 'center' }}
       color="text.secondary"
     >
-      <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} />
-      Pro tip: See more <Link href="/guide/">Guide</Link> in the documentation.
+      加入我們的{' '}
+      <Button
+        variant="text"
+        component={Link}
+        href="https://discord.gg/65VpSVppRs/"
+        target="_blank"
+        color="primary"
+        startIcon={<DiscordIcon />}
+      >
+        Discord 群組
+      </Button>
+      ，一起交流與討論！
+      {/* <Button
+        variant="text"
+        component={Link}
+        href="https://discord.gg/65VpSVppRs/"
+        target="_blank"
+        color="primary"
+        startIcon={<WhatsAppIcon />}
+      >
+        Discord
+      </Button>
+      <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} /> */}
+      {/* Pro tip: See more <Link href="/guide/">Guide</Link> in the documentation. */}
     </Typography>
   );
 }
