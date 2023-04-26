@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "image": "next-export-optimize-images",
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
@@ -30,6 +31,7 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "htmlparser2": "^8.0.1",
+    "next-export-optimize-images": "^2.0.1",
     "react-markdown": "^8.0.5",
     "styled-components": "^5.3.9",
     "typescript": "latest"

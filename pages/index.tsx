@@ -14,6 +14,19 @@ import Copyright from '../src/Copyright';
 import FooterBar from '../src/FooterBar';
 import Grid from '@mui/material/Unstable_Grid2';
 
+import Image from 'next/image';
+
+// const myLoader = ({ src, width, quality }) => {
+//   return `https://example.com/${src}?w=${width}&q=${quality || 75}`
+// }
+
+// import myImage from './test.png?webp';
+
+// import myImage from '../public/test.png';
+
+// const a = require('./test.png?webp');
+// console.log(a.default);
+
 export default function Home() {
   return (
     <>
@@ -45,6 +58,26 @@ export default function Home() {
         ]}
       />
       <Container maxWidth="lg">
+        <div style={{ width: '1000px', height: '667px' }}>
+          {/* <img src={require('./test.png?webp').default.src} /> */}
+          <Image src="./test.png" width={1920} height={1280} alt="" />;
+          {/* <img src="./images/test.png?webp" /> */}
+          {/* <picture style={{ objectFit: 'cover' }}>
+            <source
+              srcSet={require('../public/test.png?webp').default.src}
+              type="image/webp"
+            />
+            <img src="./test.png" />
+          </picture> */}
+        </div>
+        {/* <img src={require('../images/test.png').default.src} /> */}
+        {/* <img
+          src={myImage.src}
+          alt="My Image"
+          width={myImage.width}
+          height={myImage.height}
+        /> */}
+        {/* <img src={a.src} alt="" /> */}
         <Box
           sx={{
             my: 4,
