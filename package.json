@@ -30,6 +30,7 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "htmlparser2": "^8.0.1",
+    "react-ga4": "^2.1.0",
     "react-markdown": "^8.0.5",
     "styled-components": "^5.3.9",
     "typescript": "latest"

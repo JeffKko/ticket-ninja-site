@@ -99,7 +99,7 @@ export default function Home() {
               <Grid sm={12} md={6}>
                 <Typography variant="h3">彈指之間完成搶票</Typography>
                 <br />
-                <Typography variant="subtitle1">3 秒送出訂單 - ✅</Typography>
+                <Typography variant="subtitle1">3 秒內送出訂單 - ✅</Typography>
                 <Typography variant="subtitle1">
                   等待拓元系統確認 - ✅
                 </Typography>

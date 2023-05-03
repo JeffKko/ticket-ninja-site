@@ -7,6 +7,7 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 import theme from '../src/theme';
 import createEmotionCache from '../src/createEmotionCache';
 import { DefaultSeo } from 'next-seo';
+import { useAnalytics } from '../src/useGoogleAnalytics';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -26,6 +27,9 @@ const darkTheme = createTheme({
 
 export default function MyApp(props: MyAppProps) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+
+  useAnalytics();
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>

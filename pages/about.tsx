@@ -24,11 +24,14 @@ import ListItemText from '@mui/material/ListItemText';
 import EmailIcon from '@mui/icons-material/Email';
 import MuiLink from '@mui/material/Link';
 import { DiscordIcon } from '../src/Icons';
+import { sendEvent } from '../src/ga4';
 
 export default function About() {
   function handleClick(id: string) {
     const element = document.getElementById(id);
     element?.scrollIntoView({ behavior: 'smooth' });
+
+    sendEvent(id);
   }
 
   return (

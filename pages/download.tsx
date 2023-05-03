@@ -94,6 +94,38 @@ export default function About() {
         <Box display="flex" alignItems="center" mt={8}>
           <NewReleasesIcon />
           <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
+            v0.1.3
+          </Typography>
+          <Typography variant="subtitle1">(2023-05-01)</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.3',
+              date: '2023-05-01',
+              fileName: 'ticket-ninja-app-0.1.3.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.3',
+              reportLink:
+                'https://www.virustotal.com/gui/file/721e1765119782571c2b792e17d89952336c3d7a38e2ff42e7049b69ae8038f3?nocache=1',
+            })}
+          </Card>
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'Windows',
+              version: '0.1.3',
+              date: '2023-05-01',
+              fileName: 'ticket-ninja-app-0.1.3-win.exe',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.3',
+              reportLink:
+                'https://www.virustotal.com/gui/file/f89a317365017d4a2aecc4213ce8297359b3b61acb1476cca3416abe1b04d243?nocache=1',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={8}>
+          <HistoryIcon fontSize="small" />
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             v0.1.2
           </Typography>
           <Typography variant="subtitle1">(2023-04-26)</Typography>
@@ -115,7 +147,7 @@ export default function About() {
               platform: 'Windows',
               version: '0.1.2',
               date: '2023-04-26',
-              fileName: 'ticket-ninja-app-0.1.2-win.dmg',
+              fileName: 'ticket-ninja-app-0.1.2-win.exe',
               link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.2',
               reportLink:
                 'https://www.virustotal.com/gui/file/064ce66f72e5e60a2e7d80ed90d7d0e587b875c093f79d9c5fb268c7bbe1f9e8?nocache=1',

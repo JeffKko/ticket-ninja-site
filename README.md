@@ -19,8 +19,8 @@
 - [使用說明](https://ticketninja.club/guide/)
 - [常見問題](https://ticketninja.club/faq/)
 
-## 🪧 相關連結 >
+## ⛓ 相關連結 >
 
 - [檔案下載](https://ticketninja.club/download/)
 - [關於我們](https://ticketninja.club/about/)
-- [Discord 討論區](https://discord.com/channels/827534182183075870/1089573736568586280)
+- [Discord 討論區](https://discord.gg/65VpSVppRs/)
