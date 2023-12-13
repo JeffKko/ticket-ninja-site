@@ -296,16 +296,21 @@ export default function About() {
                 <li>https://ticketninja.club/ 官網上線</li>
                 <li>桌面 App 測試版發布</li>
               </ul>
+              <Typography variant="h6">2023年 11月</Typography>
+              <ul>
+                <li>IVE＆大巨蛋亞錦賽開跑, 社群突破 300 人 🎉 </li>
+              </ul>
               <Typography variant="body1" color="text.secondary">
                 持續更新抓蟲中...
               </Typography>
+
               <Typography variant="h5" id="contact">
                 聯絡我們
               </Typography>
               <Button
                 variant="text"
                 component={Link}
-                href="https://discord.gg/65VpSVppRs/"
+                href="https://discord.gg/bCUaHhqGcp/"
                 target="_blank"
                 color="primary"
                 startIcon={<DiscordIcon />}

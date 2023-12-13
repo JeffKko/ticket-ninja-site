@@ -24,7 +24,7 @@ export default function ProTip() {
       <Button
         variant="text"
         component={Link}
-        href="https://discord.gg/65VpSVppRs/"
+        href="https://discord.gg/bCUaHhqGcp/"
         target="_blank"
         color="primary"
         startIcon={<DiscordIcon />}
@@ -32,18 +32,6 @@ export default function ProTip() {
         Discord 群組
       </Button>
       ，一起交流與討論！
-      {/* <Button
-        variant="text"
-        component={Link}
-        href="https://discord.gg/65VpSVppRs/"
-        target="_blank"
-        color="primary"
-        startIcon={<WhatsAppIcon />}
-      >
-        Discord
-      </Button>
-      <LightBulbIcon sx={{ mr: 1, verticalAlign: 'middle' }} /> */}
-      {/* Pro tip: See more <Link href="/guide/">Guide</Link> in the documentation. */}
     </Typography>
   );
 }
