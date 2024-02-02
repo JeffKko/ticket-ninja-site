@@ -1,4 +1,4 @@
-import * as React from 'react';
+import { useState } from 'react';
 import { NextSeo, WebPageJsonLd } from 'next-seo';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -12,9 +12,15 @@ import Link from '../src/Link';
 import ProTip from '../src/ProTip';
 import Copyright from '../src/Copyright';
 import FooterBar from '../src/FooterBar';
+import StatusDrawer from '../src/StatusDrawer';
 import Grid from '@mui/material/Unstable_Grid2';
+import Fab from '@mui/material/Fab';
+import Tooltip from '@mui/material/Tooltip';
+import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
 
 export default function Home() {
+  const [isShow, setIsShow] = useState(false);
+
   return (
     <>
       <NextSeo canonical="https://ticketninja.club/" />
@@ -44,7 +50,31 @@ export default function Home() {
           },
         ]}
       />
+      <StatusDrawer
+        isShow={isShow}
+        onClose={() => {
+          setIsShow(false);
+        }}
+      />
       <Container maxWidth="lg">
+        <Box
+          sx={{
+            position: 'fixed',
+            right: '24px',
+            bottom: '20%',
+            zIndex: 1,
+          }}
+        >
+          <Tooltip title="服務監控">
+            <Fab
+              color="primary"
+              aria-label="add"
+              onClick={() => setIsShow(true)}
+            >
+              <MonitorHeartIcon />
+            </Fab>
+          </Tooltip>
+        </Box>
         <Box
           sx={{
             my: 4,
