@@ -23,4 +23,4 @@
 
 - [檔案下載](https://ticketninja.club/download/)
 - [關於我們](https://ticketninja.club/about/)
-- [Discord 討論區](https://discord.gg/bCUaHhqGcp/)
+- [Discord 討論區](https://discord.gg/bCUaHhqGcp)

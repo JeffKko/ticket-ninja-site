@@ -94,9 +94,59 @@ export default function About() {
         <Box display="flex" alignItems="center" mt={8}>
           <NewReleasesIcon />
           <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
+            v0.1.8
+          </Typography>
+          <Typography variant="subtitle1">(2023-01-27) [最新版本]</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.8',
+              date: '2023-01-27',
+              fileName: 'ticket-ninja-app-0.1.8.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.8',
+              reportLink: '',
+            })}
+          </Card>
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'Windows',
+              version: '0.1.8',
+              date: '2023-01-27',
+              fileName: 'ticket-ninja-app-0.1.8-win.exe',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.8',
+              reportLink: '',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={8}>
+          <HistoryIcon fontSize="small" />
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
+            v0.1.7
+          </Typography>
+          <Typography variant="subtitle1">(2023-12-15) [穩定版本]</Typography>
+        </Box>
+        <Box display="flex" flexWrap="wrap" justifyContent="center">
+          <Card variant="outlined" sx={{ minWidth: 275 }}>
+            {renderCardBody({
+              platform: 'macOS',
+              version: '0.1.7',
+              date: '2023-12-15',
+              fileName: 'ticket-ninja-app-0.1.7.dmg',
+              link: 'https://github.com/JeffKko/ticket-ninja-site/releases/tag/v0.1.7',
+              reportLink: '',
+            })}
+          </Card>
+        </Box>
+
+        <Box display="flex" alignItems="center" mt={8}>
+          <HistoryIcon fontSize="small" />
+          <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             v0.1.6
           </Typography>
-          <Typography variant="subtitle1">(2023-12-11) [最新版本]</Typography>
+          <Typography variant="subtitle1">(2023-12-11)</Typography>
         </Box>
         <Box display="flex" flexWrap="wrap" justifyContent="center">
           <Card variant="outlined" sx={{ minWidth: 275 }}>
@@ -126,7 +176,7 @@ export default function About() {
           <Typography variant="h6" component="h5" mr={1} marginLeft={2}>
             v0.1.5
           </Typography>
-          <Typography variant="subtitle1">(2023-11-24) [穩定版本]</Typography>
+          <Typography variant="subtitle1">(2023-11-24)</Typography>
         </Box>
         <Box display="flex" flexWrap="wrap" justifyContent="center">
           <Card variant="outlined" sx={{ minWidth: 275 }}>

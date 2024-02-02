@@ -296,28 +296,39 @@ export default function About() {
                 <li>https://ticketninja.club/ 官網上線</li>
                 <li>桌面 App 測試版發布</li>
               </ul>
+              <Typography variant="h6">2023年 5月</Typography>
+              <ul>
+                <li>桌面 App v0.1.4 穩定版發布</li>
+              </ul>
               <Typography variant="h6">2023年 11月</Typography>
               <ul>
                 <li>IVE＆大巨蛋亞錦賽開跑, 社群突破 300 人 🎉 </li>
               </ul>
+              <Typography variant="h6">2023年 12月</Typography>
+              <ul>
+                <li>App 新增場次選擇器功能</li>
+              </ul>
+              <Typography variant="h6">2024年 1月</Typography>
+              <ul>
+                <li>App 新增快速登入功能 </li>
+                <li>大港開唱, 社群突破 500 人 🎉 </li>
+              </ul>
               <Typography variant="body1" color="text.secondary">
                 持續更新抓蟲中...
               </Typography>
-
               <Typography variant="h5" id="contact">
                 聯絡我們
               </Typography>
               <Button
                 variant="text"
                 component={Link}
-                href="https://discord.gg/bCUaHhqGcp/"
+                href="https://discord.gg/bCUaHhqGcp"
                 target="_blank"
                 color="primary"
                 startIcon={<DiscordIcon />}
               >
                 Discord 群組
               </Button>
-              <br />
               <Box
                 sx={{ marginLeft: '6px' }}
                 display={'flex'}
@@ -329,6 +340,22 @@ export default function About() {
                 />
                 <Typography variant="body2">b3589481400@gmail.com</Typography>
               </Box>
+              <Typography variant="h5" id="contact">
+                支持我們
+              </Typography>
+              <a href="https://www.buymeacoffee.com/jeffkko" target="_blank">
+                <img
+                  src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                  alt="Buy Me A Coffee"
+                  height={60}
+                  width={217}
+                  // style={{
+                  //   height: '60px !important;',
+                  //   width: '217px !important;',
+                  // }}
+                />
+              </a>
+              <br />
             </Grid>
           </Grid>
         </Box>

@@ -24,7 +24,7 @@ export default function ProTip() {
       <Button
         variant="text"
         component={Link}
-        href="https://discord.gg/bCUaHhqGcp/"
+        href="https://discord.gg/bCUaHhqGcp"
         target="_blank"
         color="primary"
         startIcon={<DiscordIcon />}
