@@ -30,6 +30,12 @@ export default function MyApp(props: MyAppProps) {
 
   useAnalytics();
 
+  React.useEffect(() => {
+    if (window.location.pathname !== '/standby/') {
+      window.location.href = '/standby/';
+    }
+  }, []);
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>
