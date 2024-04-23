@@ -32,7 +32,7 @@ export default function MyApp(props: MyAppProps) {
 
   React.useEffect(() => {
     if (window.location.pathname !== '/standby/') {
-      window.location.href = '/standby/';
+      window.location.replace('/standby/');
     }
   }, []);
 

@@ -24,26 +24,32 @@ interface Props {
 export const getStaticProps: GetStaticProps<Props> = async () => {
   // const res = await axios.get('https://hackmd.io/s/how-to-create-book')
 
-  const res = await axios.get(
-    'https://hackmd.io/@jzAV4dxpRviFxKd2XnW_9g/S1a1s6Veh',
-  );
-
-  const $ = cheerio.load(res.data);
-  const doc = $('#doc').html();
-
-  // console.log(doc)
-
-  if (!doc) throw new Error('not found doc');
-
-  const escapedHTML = doc
-    .replace(/&lt;br \/&gt;/g, '<br />')
-    .replace(/&gt;/g, '>');
-
   return {
     props: {
-      article: escapedHTML,
+      article: '',
     },
   };
+
+  // const res = await axios.get(
+  //   'https://hackmd.io/@jzAV4dxpRviFxKd2XnW_9g/S1a1s6Veh',
+  // );
+
+  // const $ = cheerio.load(res.data);
+  // const doc = $('#doc').html();
+
+  // // console.log(doc)
+
+  // if (!doc) throw new Error('not found doc');
+
+  // const escapedHTML = doc
+  //   .replace(/&lt;br \/&gt;/g, '<br />')
+  //   .replace(/&gt;/g, '>');
+
+  // return {
+  //   props: {
+  //     article: escapedHTML,
+  //   },
+  // };
 };
 
 const About: React.FC<Props> = ({ article }) => {
