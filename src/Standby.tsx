@@ -3,8 +3,8 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
-import { TopSticker } from '../src/TopSticker';
-import FooterBar from '../src/FooterBar';
+import { TopSticker } from './TopSticker';
+import FooterBar from './FooterBar';
 
 export default function Standby() {
   return (

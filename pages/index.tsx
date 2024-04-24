@@ -17,9 +17,12 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Fab from '@mui/material/Fab';
 import Tooltip from '@mui/material/Tooltip';
 import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
+import Standby from '../src/Standby';
 
 export default function Home() {
   const [isShow, setIsShow] = useState(false);
+
+  return <Standby />;
 
   return (
     <>

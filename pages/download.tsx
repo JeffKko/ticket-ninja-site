@@ -23,6 +23,8 @@ import SecurityIcon from '@mui/icons-material/Security';
 
 import { TopSticker } from '../src/TopSticker';
 
+import Standby from '../src/Standby';
+
 interface CardProps {
   platform: string;
   version: string;
@@ -33,6 +35,8 @@ interface CardProps {
 }
 
 export default function About() {
+  return <Standby />;
+
   return (
     <Container maxWidth="lg">
       <TopSticker />

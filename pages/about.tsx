@@ -26,6 +26,8 @@ import MuiLink from '@mui/material/Link';
 import { DiscordIcon } from '../src/Icons';
 import { sendEvent } from '../src/ga4';
 
+import Standby from '../src/Standby';
+
 export default function About() {
   function handleClick(id: string) {
     const element = document.getElementById(id);
@@ -33,6 +35,8 @@ export default function About() {
 
     sendEvent(id);
   }
+
+  return <Standby />;
 
   return (
     <Container maxWidth="lg">

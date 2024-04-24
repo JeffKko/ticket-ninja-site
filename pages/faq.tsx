@@ -27,6 +27,8 @@ import MuiLink from '@mui/material/Link';
 
 import { TopSticker } from '../src/TopSticker';
 
+import Standby from '../src/Standby';
+
 interface Props {
   article: string;
 }
@@ -64,6 +66,8 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 
 const Faq: React.FC<Props> = ({ article }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  return <Standby />;
 
   return (
     <Container maxWidth="lg">

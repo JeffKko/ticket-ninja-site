@@ -16,6 +16,7 @@ import ReactMarkdown from 'react-markdown';
 import FooterBar from '../src/FooterBar';
 
 import { TopSticker } from '../src/TopSticker';
+import Standby from '../src/Standby';
 
 interface Props {
   article: string;
@@ -53,6 +54,8 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 };
 
 const About: React.FC<Props> = ({ article }) => {
+  return <Standby />;
+
   return (
     <Container maxWidth="lg">
       <TopSticker />
